@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="profile_image_width">60dp</dimen>
+    <dimen name="profile_image_height">60dp</dimen>
+
+    <dimen name="activity_padding">15dp</dimen>"
+    <dimen name="tweet_padding">15dp</dimen>
+    <dimen name="tweet_inter_component_margin">10dp</dimen>
+</resources>

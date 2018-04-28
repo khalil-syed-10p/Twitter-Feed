@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:background="#00000000"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/tweet_inter_component_margin"
+        android:layout_marginBottom="@dimen/tweet_inter_component_margin"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerView"
+        android:layout_marginBottom="@dimen/tweet_inter_component_margin"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTxtScreenName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:lines="1"
+            android:maxLines="1"
+            android:hint="@string/hint_screen_name"
+            android:imeOptions="actionGo"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnViewTimeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInputLayout"
+        style="@style/PrimaryButtonStyle"
+        android:text="@string/btn_view_timeline"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/centerView"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/twitter_logo"
+        android:scaleType="centerInside"/>
+
+</RelativeLayout>

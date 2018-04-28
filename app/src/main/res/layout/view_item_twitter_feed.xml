@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/tweet_padding">
+
+    <com.khalil.twitterfeed.components.CircleImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:src="@drawable/ic_launcher_background"
+        android:layout_marginEnd="@dimen/tweet_inter_component_margin"
+        android:layout_marginRight="@dimen/tweet_inter_component_margin"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/PrimaryTitleTextStyle"
+        android:layout_toEndOf="@id/imgProfile"
+        android:layout_toRightOf="@id/imgProfile"
+        tools:text="Hello"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tweet_inter_component_margin"
+        android:layout_marginStart="@dimen/tweet_inter_component_margin"
+        android:layout_toEndOf="@id/txtName"
+        android:layout_toRightOf="@id/txtName"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtScreenName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="70dp"
+            android:layout_marginEnd="70dp"
+            style="@style/SecondaryTitleTextStyle"
+            tools:text="\@ArsenalNexus" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            style="@style/SecondaryTitleTextStyle"
+            tools:text="45m">
+        </TextView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextStyle"
+        android:layout_toEndOf="@id/imgProfile"
+        android:layout_toRightOf="@id/imgProfile"
+        android:layout_below="@id/txtName"
+        android:layout_marginTop="@dimen/tweet_inter_component_margin"
+        tools:text="Hello how are you. This is test text. Nothing I an do to change this. abakasd avakjdasd"/>
+
+</RelativeLayout>

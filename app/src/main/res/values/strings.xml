@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Twitter Feed</string>
+    <string name="api_url">https://api.twitter.com/</string>
+    <string name="auth_token">AAAAAAAAAAAAAAAAAAAAAGEd5wAAAAAAGrfDugw5bs9163jCOqGtenerDLg%3DpaLod76hSwTXeEEfTmHv8wwqNxnbZ2ly79tqCj6awMWG75iouI</string>
+    <string name="text_please_wait">Please Wait…</string>
+    <string name="hint_screen_name">Screen Name</string>
+    <string name="error_empty_screen_name">Screen name cannot be empty</string>
+    <string name="error_invalid_screen_name">Please enter a valid screen name</string>
+    <string name="btn_view_timeline">View Timeline</string>
+    <string name="error_internet_connection">There seems to a problem with the internet. Please try again later.</string>
+    <string name="error_unauthorized">There seems to be some problem with APIs. Please try again later.</string>
+    <string name="text_no_data">No Tweets Available</string>
+</resources>
